@@ -3,17 +3,17 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ClassifyResponse {
-    sequence: String,
-    labels: Vec<String>,
-    scores: Vec<f32>,
+    pub sequence: String,
+    pub labels: Vec<String>,
+    pub scores: Vec<f32>,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct GenerateResponse {
-    model: String,
-    compute_time: f32,
-    text: String,
-    prompt: String,
+    pub model: String,
+    pub compute_time: f32,
+    pub text: String,
+    pub prompt: String,
 }
 
 pub struct GPT {

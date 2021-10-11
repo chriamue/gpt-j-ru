@@ -15,6 +15,16 @@ test tests::test_classify ... ok
 test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.87s
 ```
 
+## bin
+
+```sh
+cargo run -- "hello world"
+```
+
+```
+, I'm GM from csgo. this is the stream from me playing Apex Legends, I'm doing my best to play competitively and I have some games. I'm playing week 2 as a support
+```
+
 ## Thanks
 
 Thanks go to vicgalle for providing https://github.com/vicgalle/gpt-j-api and the api service
