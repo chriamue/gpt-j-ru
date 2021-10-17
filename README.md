@@ -17,12 +17,24 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 ## bin
 
+Generate some text:
+
 ```sh
 cargo run -- "hello world"
 ```
 
 ```
 , I'm GM from csgo. this is the stream from me playing Apex Legends, I'm doing my best to play competitively and I have some games. I'm playing week 2 as a support
+```
+
+Classify a given text:
+
+```sh
+cargo run -- classify good,bad,summer,winter "it is a sunny morning"
+```
+
+```sh
+ClassifyResponse { sequence: "it is a sunny morning", labels: ["summer", "good", "bad", "winter"], scores: [0.9894993, 0.006536223, 0.0022623988, 0.0017020804] }
 ```
 
 ## Thanks
